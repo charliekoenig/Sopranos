@@ -423,5 +423,10 @@ textarea {
     .BandName {
         font-size: 40px;
     }
+
+    img {
+        max-width: fit-content;
+        height: auto;
+    }
    
 }
