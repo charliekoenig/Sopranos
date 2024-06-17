@@ -438,5 +438,10 @@ textarea {
         max-width: 375px;
         height: auto;
     }
+
+    .NavButton:hover {
+        width: 150px;
+        border: none;
+    }
    
 }
