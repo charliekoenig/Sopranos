@@ -419,5 +419,9 @@ textarea {
     .offsetRule {
         margin-left: 0px;
     }
+
+    .BandName {
+        font-size: 40px;
+    }
    
 }
