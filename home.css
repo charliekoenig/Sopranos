@@ -413,7 +413,7 @@ textarea {
 
 @media (max-width: 675px) {
     .SocialMedia {
-        visibility: hidden;
+        display: none;
     }
 
     .ticketBar {
@@ -432,7 +432,7 @@ textarea {
         display: none;
     }
 
-    img {
+    .bioImage,.ShowContainer {
         max-width: 400px;
         height: auto;
     }
