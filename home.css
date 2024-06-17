@@ -109,7 +109,6 @@ h4 {
 .imageCol .Show {
     background-color: rgba(207, 0, 0, .2);
     margin-bottom: 20px;
-    background-blend-mode:darken;
     border-radius: 15px;
 }
 
@@ -248,23 +247,24 @@ textarea {
     display: flex;
     justify-content: center; /* Centers the container horizontally */
     align-items: center; /* Centers the container vertically */
-    height: 100vh; /* Makes the container fill the viewport height */
-    margin-top:300px;
+    height: auto;  /* Makes the container fill the viewport height */
+    margin-top:100px;
 }
 
 #shopItems {
-    width:60%;
+    width: 100%;
     text-align: center;
     border-spacing: 5em;
 }
 
 #shopItems img {
     height: 250px;
+    width: auto; 
     padding: 0px;
 }
 
 #shopItems td {
-    margin: 20px;
+    padding: 10px;
 }
 
 #shopItems td:hover{
@@ -312,13 +312,14 @@ textarea {
     /* Ensure each cell takes full width */
     #shopItems td {
         display: block;
-        padding: 0px;
+        padding: 10px 0px;
         margin: 0px;
+        text-align: center;
     }
 
     #shop {
-        margin-top:700px;
-        padding: 0px;
+        margin-top:80px;
+        padding: 10px;
     }
 }
 
@@ -433,7 +434,7 @@ textarea {
     }
 
     .bioImage,.ShowContainer {
-        max-width: 400px;
+        max-width: 375px;
         height: auto;
     }
    
