@@ -305,15 +305,20 @@ textarea {
 
     #shopItems tr {
         display: block;
+        padding: 0px;
+        margin: 0px;
     }
     
     /* Ensure each cell takes full width */
     #shopItems td {
         display: block;
+        padding: 0px;
+        margin: 0px;
     }
 
     #shop {
         margin-top:700px;
+        padding: 0px;
     }
 }
 
