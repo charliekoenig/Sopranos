@@ -1,0 +1,423 @@
+body {
+    background-color: black;
+    color:white;
+}
+
+h4 {
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.Header {
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    justify-content: space-between; 
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    margin-bottom: 10px;
+}
+
+.BandName {
+    margin: 15px 45px; 
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.NavBar {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px;
+}
+
+
+.NavButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px; 
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+    box-sizing: border-box;
+    position: relative;
+    transition: width 0.3s ease, border-radius 0.3s ease; 
+
+}
+
+.NavText {
+    display: none;
+    font-size: 20px;
+}
+
+.NavButton i {
+    font-size: 30px; 
+    padding: 0;
+    transition: font-size 0.3s ease;
+}
+
+#Subtitle {
+    display: inline;
+    width: 99%;
+    position: absolute;
+    margin-top: 100px;
+}
+
+.NavButton:hover i{
+    display: none;
+}
+
+.NavButton:hover .NavText {
+    display: inline;
+}
+
+.NavButton:hover {
+    width: 150px;
+    border-radius: 40px;
+    border: 1.5px white solid;
+}
+
+#HomeInfo {
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+#HomeInfo ul{
+    margin: 0px;
+    list-style: none;
+    padding: 0px 40px;
+
+}
+
+.Show {
+    position: relative;
+    display: inline-block; 
+    text-align: center; 
+    padding: 20px; 
+    vertical-align: top; 
+}
+
+.imageCol .Show {
+    background-color: rgba(207, 0, 0, .2);
+    margin-bottom: 20px;
+    background-blend-mode:darken;
+    border-radius: 15px;
+}
+
+.ShowContainer {
+    width: 475px;
+    height: auto;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.Tickets {
+    position: absolute;
+    top: 42.5%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white;
+    font-size: 0; /* Hidden initially */
+    background: none; /* Ensure no background */
+}
+
+.ShowInfo {
+    display: block;
+    margin-top: 15px; /* Space between image and show info */
+    font-size: 18px; /* Adjust as needed */
+    color:white;
+}
+
+.ShowContainer:hover {
+    filter: grayscale(90%);
+    opacity: 60%;
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.ShowContainer:hover+.Tickets {
+    font-size: 20px;
+}
+
+.SocialMedia {
+    position: fixed;
+    height:100%;
+    top: 25%;
+    left: -15px;
+    z-index: 1000;
+}
+
+.SocialMedia ul {
+    list-style-type: none;
+    font-size: 35px;
+}
+
+.SocialMedia li:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.Section {
+    font-size: 35px;
+    margin-top: 40px;
+}
+
+.bioImage {
+    width: 450px;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.offsetRule {
+    margin-left: 100px;
+}
+
+.ticketBar {
+    display: flex;
+
+    margin-top: 150px;
+    margin-left: 100px;
+    height: 40px;
+    font-size: 30px;
+    padding: 25px;    
+}
+
+.date {
+    margin: 0px 50px;
+    min-width: 150px;
+}
+
+.city {
+    min-width: 150px;
+}
+
+.ticketBar .NavButton {
+    padding: 0px;
+    margin: 0px;
+    margin-left: auto;
+    margin-top: -15px;
+}
+
+#contactForm {
+    display: flex;
+    width: 100%; 
+    justify-content: center;
+    margin: 150px 0px;
+    font-size: 25px;
+}
+
+#contactForm form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+#group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.imageCol {
+    display: flex;
+    flex-direction: column;
+    /* flex: 1 1 450px;  */
+    margin: 10px;
+}
+
+textarea {
+    resize: none;
+}
+
+#shop {
+    display: flex;
+    justify-content: center; /* Centers the container horizontally */
+    align-items: center; /* Centers the container vertically */
+    height: 100vh; /* Makes the container fill the viewport height */
+    margin-top:300px;
+}
+
+#shopItems {
+    width:60%;
+    text-align: center;
+    border-spacing: 5em;
+}
+
+#shopItems img {
+    height: 250px;
+    padding: 0px 80px;
+}
+
+#shopItems td {
+    margin: 20px;
+}
+
+#shopItems td:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+
+#hamburgerCheckbox {
+    display: none;
+}
+
+.hamburgerMenu {
+    font-size: 25px;
+    margin: 20px 60px;
+    position: fixed;
+    cursor: pointer;
+    display: none;
+    right: 0;
+}
+
+
+@media (max-width: 1000px) {
+    .ticketBar {
+        font-size: 25px;
+    }
+
+    .date {
+        min-width: 100px;
+    }
+    
+    .city {
+        min-width: 125px;
+    }
+
+    .BandName {
+        font-size: 55px;
+    }
+
+    #shopItems tr {
+        display: block;
+    }
+    
+    /* Ensure each cell takes full width */
+    #shopItems td {
+        display: block;
+    }
+
+    #shop {
+        margin-top:700px;
+    }
+}
+
+@media (max-width: 850px) {
+    .ticketBar {
+        font-size: 20px;
+        padding-bottom: 0px;
+    }
+    
+    .date {
+        min-width: 80px;
+    }
+    
+    .city {
+        min-width: 125px;
+    }
+
+    .ticketBar .NavButton i{
+        font-size: 20px;
+    }
+
+    .ticketBar .NavButton:hover i{
+        font-size: 0px; 
+        padding: 0;
+    }
+
+    .ticketBar .NavButton:hover .NavText {
+        font-size: 13px;
+    }
+
+    .ticketBar .NavButton:hover {
+        width: 80px;
+    }
+
+    .NavBar {
+        display: none;
+    }
+
+    .hamburgerMenu {
+        display: block;
+    }
+
+    .BandName:has(+#hamburgerCheckbox:checked) {
+        display: none;
+    }
+
+    #hamburgerCheckbox:checked + #Subtitle {
+        display: none;
+    }
+
+    #hamburgerCheckbox:checked ~ .NavBar {
+        display: flex;
+        width: 99%;
+        padding-top: 40px;
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+}
+
+@media (max-width: 750px) {
+    .ticketBar {
+        font-size: 18px;
+        padding-bottom: 0px;
+    }
+    
+    .date {
+        min-width: 60px;
+    }
+    
+    .city {
+        min-width: 80px;
+    }
+
+    .ticketBar .NavButton i{
+        font-size: 20px;
+    }
+
+    .ticketBar .NavButton:hover i{
+        font-size: 0px; 
+        padding: 0;
+    }
+
+    .ticketBar .NavButton:hover .NavText {
+        font-size: 13px;
+    }
+
+    .ticketBar .NavButton:hover {
+        width: 80px;
+    }
+    
+}
+
+@media (max-width: 675px) {
+    .SocialMedia {
+        visibility: hidden;
+    }
+
+    .ticketBar {
+        margin-left: 0px;
+    }
+
+    .offsetRule {
+        margin-left: 0px;
+    }
+   
+}
