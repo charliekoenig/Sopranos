@@ -12,13 +12,11 @@ h4 {
     background-color: rgba(0, 0, 0, .7);
     display: flex;
     justify-content: space-between; 
-    padding: 0px;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
-    margin-bottom: 10px;
 }
 
 .BandName {
@@ -47,7 +45,6 @@ h4 {
     box-sizing: border-box;
     position: relative;
     transition: width 0.3s ease, border-radius 0.3s ease; 
-
 }
 
 .NavText {
@@ -125,14 +122,14 @@ h4 {
     left: 50%; 
     transform: translate(-50%, -50%); 
     color: white;
-    font-size: 0; /* Hidden initially */
-    background: none; /* Ensure no background */
+    font-size: 0;
+    background: none; 
 }
 
 .ShowInfo {
     display: block;
-    margin-top: 15px; /* Space between image and show info */
-    font-size: 18px; /* Adjust as needed */
+    margin-top: 15px; 
+    font-size: 18px; 
     color:white;
 }
 
@@ -245,9 +242,9 @@ textarea {
 
 #shop {
     display: flex;
-    justify-content: center; /* Centers the container horizontally */
-    align-items: center; /* Centers the container vertically */
-    height: auto;  /* Makes the container fill the viewport height */
+    justify-content: center; 
+    align-items: center; 
+    height: auto;  
     margin-top:100px;
 }
 
@@ -306,7 +303,7 @@ textarea {
         margin: 0px;
     }
     
-    /* Ensure each cell takes full width */
+    
     #shopItems td {
         display: block;
         box-sizing: border-box;
