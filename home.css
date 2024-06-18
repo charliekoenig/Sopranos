@@ -263,10 +263,6 @@ textarea {
     padding: 0px;
 }
 
-#shopItems td {
-    padding: 10px;
-}
-
 #shopItems td:hover{
     scale: 1.05;
     cursor: pointer;
@@ -305,6 +301,7 @@ textarea {
 
     #shopItems tr {
         display: block;
+        box-sizing: border-box;
         padding: 0px;
         margin: 0px;
     }
@@ -312,6 +309,7 @@ textarea {
     /* Ensure each cell takes full width */
     #shopItems td {
         display: block;
+        box-sizing: border-box;
         padding: 10px 0px;
         margin: 0px;
         text-align: center;
