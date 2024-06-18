@@ -279,7 +279,9 @@ textarea {
     right: 0;
 }
 
-
+.hamburgerMenu .fa-times {
+    display: none;
+}
 @media (max-width: 1000px) {
     .ticketBar {
         font-size: 25px;
@@ -376,6 +378,13 @@ textarea {
         width: 99%;
         padding-top: 40px;
         background-color: rgba(0, 0, 0, 1);
+    }
+
+    #hamburgerCheckbox:checked + .hamburgerMenu .fa-bars {
+        display: none;
+    }
+    #hamburgerCheckbox:checked + .hamburgerMenu .fa-times {
+        display: inline-block;
     }
 
 }
